@@ -21,7 +21,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 1. Activate the virtual environment created in the step above:  
 `workon [env-name]`
-2. In the project root directory `smartlines-backend`, install the project dependencies by running:  
+2. In the project root directory, install the project dependencies by running:  
 `pip install -r requirement.txt`
 
 ### Run local DB migrations
