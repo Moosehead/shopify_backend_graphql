@@ -43,14 +43,10 @@ class Query(object):
     
     product = graphene.Field(ProductType,id=graphene.Int())
     
-    all_cart = graphene.List(CartType)
-    # all_ingredients = graphene.List(IngredientType)
+    # all_cart = graphene.List(CartType)
 
     def resolve_all_product(self,info):
         return Product.objects.all()
-
-    def resolve_all_cart(self,info):
-        return Cart.objects.all()
 
     def resolve_product(self, info, **kwargs):
         id = kwargs.get('id')
